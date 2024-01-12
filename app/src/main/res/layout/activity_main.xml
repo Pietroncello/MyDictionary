@@ -5,7 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/white">
         <androidx.cardview.widget.CardView
             android:layout_margin="10dp"
             app:cardCornerRadius="8dp"
@@ -42,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:text="Word"
-                android:textColor="@color/orange"
+                android:textColor="@color/lightRed"
                 android:textSize="24sp"
                 android:textStyle="italic" />
 
@@ -56,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
                 android:text="Meanings"
-                android:textColor="@color/orange"
+                android:textColor="@color/lightBlue"
                 android:padding="8dp"
                 android:textStyle="italic" />
             <androidx.recyclerview.widget.RecyclerView
