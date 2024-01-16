@@ -1,6 +1,5 @@
 package com.example.mydictionary.Models;
 
-import java.util.List;
 
 public class Definitions {
     String definition = "";
@@ -11,9 +10,6 @@ public class Definitions {
         return definition;
     }
 
-    public void setDefinition(String definition) {
-        this.definition = definition;
-    }
 
     public String getExample() {
         return example;

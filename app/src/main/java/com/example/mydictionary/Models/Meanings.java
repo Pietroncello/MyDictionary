@@ -10,15 +10,9 @@ public class Meanings {
         return partOfSpeech;
     }
 
-    public void setPartOfSpeech(String partOfSpeech) {
-        this.partOfSpeech = partOfSpeech;
-    }
 
     public List<Definitions> getDefinitions() {
         return definitions;
     }
 
-    public void setDefinitions(List<Definitions> definitions) {
-        this.definitions = definitions;
-    }
 }

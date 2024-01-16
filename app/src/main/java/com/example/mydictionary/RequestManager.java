@@ -27,11 +27,13 @@ public class RequestManager {
         this.context = context;
     }
 
+    // Metodo per ottenere i significati di una parola
     public void prendiSignificato(OnFetchDataListener listener, String word) {
         ChiamaDizionario chiamaDizionario = retrofit.create(ChiamaDizionario.class);
         Call<List<APIResponse>> chiama = chiamaDizionario.chiamaSignificati(word);
 
         try{
+            // Esecuzione della chiamata asincrona
             chiama.enqueue(new Callback<List<APIResponse>>() {
                 @Override
                 public void onResponse(Call<List<APIResponse>> call, Response<List<APIResponse>> response) {
@@ -45,6 +47,7 @@ public class RequestManager {
 
                 @Override
                 public void onFailure(Call<List<APIResponse>> call, Throwable t) {
+                    // Gestione del fallimento della chiamata API
                     listener.onError("Request failed!!");
                 }
             });

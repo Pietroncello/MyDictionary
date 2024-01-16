@@ -5,7 +5,7 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onError(String message) {
             progressBar.setVisibility(View.INVISIBLE);
-            Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "error", Toast.LENGTH_SHORT).show();
 
         }
     };
